@@ -1,9 +1,5 @@
-function BestComponent() {
-  return <h2>hi</h2>
-}
+import { SearchPage } from "./pages/SearchPage";
 
 export function App() {
-  return <div>"wassap"
-    <BestComponent></BestComponent>
-  </div>;
+  return <SearchPage></SearchPage>;
 }
