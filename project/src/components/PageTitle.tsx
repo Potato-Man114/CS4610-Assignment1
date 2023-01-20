@@ -1,5 +1,5 @@
 export function PageTitle() {
-  return <h3 className="page_title">
+  return <h2 className="page_title">
     Quote Search
-  </h3>
+  </h2>
 }
