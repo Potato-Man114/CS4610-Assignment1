@@ -1,9 +1,9 @@
 interface InitialQuoteProp {
-  quote_text: string,
-  author: string
+  quote_text?: string,
+  author?: string
 }
 
-export function InitialQuote({ quote_text, author }: InitialQuoteProp) {
+export function InitialQuote({ quote_text = "loading...", author = "loading..." }: InitialQuoteProp) {
   return (
     <div className="search_result">
       <p className="quote quote_body">{quote_text}</p>
