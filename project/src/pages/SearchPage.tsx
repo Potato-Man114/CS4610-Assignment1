@@ -74,7 +74,6 @@ export function SearchPage() {
     setSearchText(event.currentTarget.value);
   }
 
-
   return (
     <div className={position}>
       <PageTitle />

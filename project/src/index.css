@@ -24,6 +24,10 @@ body {
   min-height: 100vh;
 }
 
+.page_title {
+  margin: 3px;
+}
+
 #results_container {
   max-height: 80vh;
   overflow-y: scroll;

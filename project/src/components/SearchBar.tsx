@@ -1,11 +1,11 @@
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 
 interface SearchBarProps {
+  //https://www.typescriptlang.org/docs/handbook/2/functions.html#:~:text=If%20you%20need%20to%20accept%20an%20arbitrary%20function
+  searchButtonOnClick: (event: React.MouseEvent) => void;
   searchBarOnChange: (event: React.FormEvent<HTMLInputElement>) => void;
-  searchButtonOnClick: (event: React.MouseEvent) => void; //https://www.typescriptlang.org/docs/handbook/2/functions.html#:~:text=If%20you%20need%20to%20accept%20an%20arbitrary%20function
 }
 
 export function SearchBar({ searchBarOnChange, searchButtonOnClick }: SearchBarProps) {
