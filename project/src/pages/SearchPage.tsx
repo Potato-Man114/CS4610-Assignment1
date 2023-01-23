@@ -43,7 +43,7 @@ export function SearchPage() {
   }, [])
 
   //function to be used when a search action is to be performed
-  function search(event: React.MouseEvent) {
+  function search(event: React.FormEvent) {
     event.preventDefault();
 
     if (searchText != "") {
@@ -77,7 +77,7 @@ export function SearchPage() {
   return (
     <div className={position}>
       <PageTitle />
-      <SearchBar searchBarOnChange={searchBarOnChange} searchButtonOnClick={search} />
+      <SearchBar searchBarOnChange={searchBarOnChange} search={search} />
       {!hasSearched && <InitialQuote author={randomQuote?.author} quote_text={randomQuote?.quote} />}
       <ResultsContainer>
         {
